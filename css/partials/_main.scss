@@ -1,9 +1,10 @@
 .seccion_1{
-    background: $fondoMain;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
+    @include backgrounD($fondo: $fondoMain, $boleano:false);
+    @include dimensiones($X:700px,$Y:100%);
     h1{
+        color: $colorPrimario;
+        font-size: 4em;
+        font-weight: bold;
         animation-name: cajaMovimiento;
         animation-fill-mode: forwards;
         animation-duration: 3s;
@@ -16,15 +17,17 @@
             }
         }
     }
+    p{
+        color: $colorCuaternario;
+        font-size: 2em
+    }
 }
 .seccion_2{
     @extend %bloquesflex;
-    height: 700px;
-    width: 100%;
+    @include dimensiones($X:700px,$Y:100%);
     padding-bottom: 50px;
     img{
-        height: 20px;
-        width: 20px;
+        @include dimensiones($X:20px,$Y:20px);
     }
     .caja_1{
         padding: 20px 0 20px 0;
@@ -41,8 +44,7 @@
             font-size: 1.5em;
         }
         .btn{
-            height: 70px;
-            width: 150px;
+            @include dimensiones($X:70px,$Y:150px);
             border-radius: 0;
             border: 2px solid $colorPrimario;
             color: $colorPrimario;
@@ -58,23 +60,100 @@
     
 }
 .seccion_3{
-    font-size: 1.5em;
+    font-size: 1.2em;
     letter-spacing: 2px;
     .cont{
         @extend %bloquesflex;
     }
     .imagen{
-        width: 300px;
-        height: 300px;
+        @include dimensiones($X:300px,$Y:300px);
         padding-bottom: 15px;
     }
 }
-
-.caja_2{
-    width: 50%;
-    .svg{
-        width: 50px;
-        height: 50px;
-        padding-bottom: 10px;
+.seccion_4{
+    @include backgrounD($fondo: $fondoSeccion, $boleano:true);
+    .caja_2{
+        padding-top: 50px;
+        @include dimensiones($X:400px,$Y:500px);
+        margin: auto;
+        .caja_2-1{
+            @extend %bloquesflex;
+            @include dimensiones($X:400px,$Y:400px);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
     }
+}
+.seccion_5{
+    padding: 30px 0 30px 0;
+    letter-spacing: 2px;
+    .caja_4{
+        @extend %bloquesflex;
+        font-size: 1.2em;
+        h1, h2{
+            color: $colorPrimario;
+        }
+        
+    }
+    .fondo{
+        height: 700px;
+        @include backgrounD($fondo: $imagen5,$boleano:true);
+        font-weight: 700;
+        p{
+            width: 90%;
+            font-size: 1.3em;
+            color: $colorCuaternario;
+        }
+    }
+    img{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .caja_3{
+        width: 50%;
+        .svg{
+            @include dimensiones($X:50px,$Y:50px);
+            padding-bottom: 10px;
+        }
+    }
+}
+
+form{
+    @extend %bloquesflex;
+    @include dimensiones($X:600px,$Y:500px);
+    font-size: 1.3em;
+    div{
+        color: $colorPrimario;
+    }
+    .formulario{
+        width: 400px;
+        border-radius: 0;
+        border: 0;
+        border-bottom: $colorPrimario solid 2px;
+        margin-bottom: 15px;
+        font-weight: 800;
+    }
+    
+    .boton{
+    width: 100px;
+    border: $colorPrimario solid 2px;
+    color: $colorPrimario;
+        &:hover{
+            background-color: $colorPrimario;
+            color: $colorCuaternario;
+        }
+    }
+}
+.contactos{
+    @extend %bloquesflex;
+    font-size: 1.3em;
+    ol{
+        list-style: none;
+        li{
+            padding: 20px;
+        }
+    }
+}
+iframe{
+    @include dimensiones($X:100%,$Y:700px);
 }

@@ -1,6 +1,14 @@
-@mixin display($X, $Y, $Z) {
-    display:flex;
-    flex-direction: $X;
-    justify-content: $Y;
-    align-items: $Z;
+@mixin dimensiones($X, $Y, $Z) {
+    width: $X;
+    height: $Y;
+}
+
+@mixin backgrounD($fondo,$boleano){
+    background: $fondo;
+    @extend %backgrounds;
+    @if($boleano){
+
+    }@else{
+        background-attachment: fixed;
+    }
 }

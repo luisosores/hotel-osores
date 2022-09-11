@@ -1,14 +1,21 @@
 
 footer{
-    background-color: $colorFooter;
+    background-color: $colorSecundario;
     color: $colorCuaternario;
+    padding-top: 20px;
+    font-size: 1.2em;
+    p{
+        padding-left: 30px;
+    }
     ol{
         list-style: none;
-        li{
-    
-            a{
-                text-decoration: none;
-            }
+    }
+    a{
+        text-decoration: none;
+        color: $colorCuaternario;
+        &:hover{
+            border-bottom: 2px solid $colorCuaternario;
+            color: $colorCuaternario;
         }
     }
 }
