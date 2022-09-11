@@ -1,14 +1,9 @@
-@mixin dimensiones($X, $Y, $Z) {
+@mixin dimensiones($X, $Y) {
     width: $X;
     height: $Y;
 }
 
-@mixin backgrounD($fondo,$boleano){
+@mixin backgrounD($fondo){
     background: $fondo;
     @extend %backgrounds;
-    @if($boleano){
-
-    }@else{
-        background-attachment: fixed;
-    }
 }

@@ -1,10 +1,23 @@
-.contactos, form, .seccion_5 .caja_4, .seccion_4 .caja_2 .caja_2-1, .seccion_3 .cont, .seccion_2 {
+@font-face {
+  font-family: miFuente;
+  src: url(../fonts/Caribbean_Island.ttf);
+}
+.contactos, form, .seccion_6 .caja_5, .seccion_5 .caja_4, .seccion_4 .caja_2 .caja_2-1, .seccion_3 .cont, .seccion_2 {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
+.seccion_4, .seccion_1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: miFuente;
+  src: url(../fonts/Caribbean_Island.ttf);
+}
 #header {
   height: 50px;
   background-color: #010517;
@@ -32,14 +45,10 @@
 
 .seccion_1 {
   background: url(../img/18.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100% px;
   height: 700px;
 }
-.seccion_1 h1 {
-  color: #ff7400;
-  font-size: 4em;
-  font-weight: bold;
+.seccion_1 h1, .seccion_1 p {
   -webkit-animation-name: cajaMovimiento;
           animation-name: cajaMovimiento;
   -webkit-animation-fill-mode: forwards;
@@ -63,19 +72,24 @@
     transform: translateX(0);
   }
 }
+.seccion_1 h1 {
+  color: #ff7400;
+  font-size: 4em;
+  font-weight: bold;
+}
 .seccion_1 p {
   color: #ffffff;
   font-size: 2em;
 }
 
 .seccion_2 {
-  height: 700px;
-  width: 100%;
+  width: 700px;
+  height: 100%;
   padding-bottom: 50px;
 }
 .seccion_2 img {
-  height: 20px;
   width: 20px;
+  height: 20px;
 }
 .seccion_2 .caja_1 {
   padding: 20px 0 20px 0;
@@ -93,8 +107,8 @@
   font-size: 1.5em;
 }
 .seccion_2 .caja_1 .btn {
-  height: 70px;
   width: 150px;
+  height: 70px;
   border-radius: 0;
   border: 2px solid #ff7400;
   color: #ff7400;
@@ -118,8 +132,6 @@
 
 .seccion_4 {
   background: url(../img/00.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
 }
 .seccion_4 .caja_2 {
@@ -136,7 +148,6 @@
 }
 
 .seccion_5 {
-  padding: 30px 0 30px 0;
   letter-spacing: 2px;
 }
 .seccion_5 .caja_4 {
@@ -145,9 +156,22 @@
 .seccion_5 .caja_4 h1, .seccion_5 .caja_4 h2 {
   color: #ff7400;
 }
+.seccion_5 .caja_4 .botonOfer {
+  width: 180px;
+  height: 40px;
+  padding: auto;
+  color: #ff7400;
+  border: 2px solid #ff7400;
+  cursor: pointer;
+}
+.seccion_5 .caja_4 .botonOfer:hover {
+  background-color: #ff7400;
+  color: #ffffff;
+  transition: 1s;
+}
 .seccion_5 .fondo {
   height: 700px;
-  background: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(../img/10.jpg);
+  background: url(../img/10.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -161,6 +185,7 @@
 .seccion_5 img {
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .seccion_5 .caja_3 {
   width: 50%;
@@ -169,6 +194,14 @@
   width: 50px;
   height: 50px;
   padding-bottom: 10px;
+}
+
+.seccion_6 img {
+  width: 100%;
+  padding-top: 10px;
+}
+.seccion_6 .caja_5 {
+  font-size: 1.2em;
 }
 
 form {
@@ -229,11 +262,28 @@ footer a {
   color: #ffffff;
 }
 footer a:hover {
-  border-bottom: 2px solid #ffffff;
   color: #ffffff;
+}
+footer .caja_icono {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+footer .caja_icono img {
+  filter: invert(100);
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+footer .caja_icono img:hover {
+  transform: scale(1.5, 1.5);
+  background-color: #ff7400;
+  box-shadow: 0 0 15px #ff7400;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: "mifuente";
 }/*# sourceMappingURL=style.css.map */
