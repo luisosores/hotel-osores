@@ -1,0 +1,74 @@
+#header {
+  height: 100px;
+}
+#header .navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #ff7400 !important;
+}
+#header .navbar .nav-item {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+#header .navbar .nav-item .nav-link {
+  letter-spacing: 2px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ff7400 !important;
+}
+#header .navbar .nav-item:hover {
+  color: #100097;
+}
+
+.seccion_1 {
+  background: url(../img/00.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.caja_1 {
+  height: 700px;
+  max-width: 700px;
+  min-width: 450px;
+  padding: 30px 0 30px 0;
+  margin: auto;
+}
+
+.imagen {
+  width: 300px;
+  height: 200px;
+  padding-bottom: 15px;
+}
+
+.caja_2 {
+  width: 50%;
+}
+.caja_2 .svg {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.figura {
+  background: url(../img/06.png);
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #222222;
+  color: #ffffff;
+}
+footer ol {
+  list-style: none;
+}
+footer ol li a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+#header{
+    height: 100px;
+    .navbar{
+        .navbar-brand{
+            font-weight: bold;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            color: $colorPrimario !important;
+        }
+        .nav-item{
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-left: 50px;
+            .nav-link{
+                letter-spacing: 2px;
+                font-size: 1em;
+                font-weight: 700;
+                color: $colorPrimario !important;
+            }
+            &:hover{
+                color: $colorSecundario;
+            }
+        }
+    }
+}

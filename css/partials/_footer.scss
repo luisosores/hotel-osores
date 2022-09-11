@@ -1,0 +1,14 @@
+
+footer{
+    background-color: $colorFooter;
+    color: $colorCuaternario;
+    ol{
+        list-style: none;
+        li{
+    
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
