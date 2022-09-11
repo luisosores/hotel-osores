@@ -92,8 +92,7 @@
         font-size: 1.2em;
         h1, h2{
             color: $colorPrimario;
-        }
-        
+        }     
     }
     .fondo{
         height: 700px;
@@ -117,7 +116,16 @@
         }
     }
 }
-
+.seccion_6{
+    img{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .caja_5{
+        @extend %bloquesflex;
+        font-size: 1.2em;
+    }
+}
 form{
     @extend %bloquesflex;
     @include dimensiones($X:600px,$Y:500px);
