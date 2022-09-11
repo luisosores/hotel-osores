@@ -1,0 +1,6 @@
+@mixin display($X, $Y, $Z) {
+    display:flex;
+    flex-direction: $X;
+    justify-content: $Y;
+    align-items: $Z;
+}

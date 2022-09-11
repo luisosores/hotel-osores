@@ -3,20 +3,71 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
+    h1{
+        animation-name: cajaMovimiento;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+        @keyframes cajaMovimiento {
+            0%{
+                    transform: translateX(-100px);
+            }
+            100%{
+                    transform: translateX(0);
+            }
+        }
+    }
 }
-
-.caja_1{
+.seccion_2{
+    @extend %bloquesflex;
     height: 700px;
-    max-width: 700px;
-    min-width: 450px;
-    padding: 30px 0 30px 0;
-    margin: auto;
+    width: 100%;
+    padding-bottom: 50px;
+    img{
+        height: 20px;
+        width: 20px;
+    }
+    .caja_1{
+        padding: 20px 0 20px 0;
+        max-width: 800px;
+        min-width: 350px;
+        h2{
+            font-size: 1em;
+        }
+        h3{
+            font-size: 2em;
+            color: $colorPrimario;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        .btn{
+            height: 70px;
+            width: 150px;
+            border-radius: 0;
+            border: 2px solid $colorPrimario;
+            color: $colorPrimario;
+            font-weight: bold;
+            &:hover{
+                background-color: $colorPrimario;
+                color: $colorCuaternario;
+                transition: 1s;
+            }
+        }
+    }
+    
+    
 }
-
-.imagen{
-    width: 300px;
-    height: 200px;
-    padding-bottom: 15px;
+.seccion_3{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    .cont{
+        @extend %bloquesflex;
+    }
+    .imagen{
+        width: 300px;
+        height: 300px;
+        padding-bottom: 15px;
+    }
 }
 
 .caja_2{
@@ -26,8 +77,4 @@
         height: 50px;
         padding-bottom: 10px;
     }
-}
-.figura{
-    background: $fondoTexto;
-    background-repeat: no-repeat;
 }
