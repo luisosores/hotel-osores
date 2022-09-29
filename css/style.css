@@ -19,7 +19,6 @@
   src: url(../fonts/Caribbean_Island.ttf);
 }
 #header {
-  height: 50px;
   background-color: #010517;
 }
 #header .navbar .navbar-brand {
@@ -123,10 +122,12 @@
 .seccion_3 {
   font-size: 1.2em;
   letter-spacing: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .seccion_3 .imagen {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 290px;
   padding-bottom: 15px;
 }
 

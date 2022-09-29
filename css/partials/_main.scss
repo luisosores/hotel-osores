@@ -64,11 +64,13 @@
 .seccion_3{
     font-size: 1.2em;
     letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     .cont{
         @extend %bloquesflex;
     }
     .imagen{
-        @include dimensiones($X:300px,$Y:300px);
+        @include dimensiones($X:290px,$Y:290px);
         padding-bottom: 15px;
     }
 }
