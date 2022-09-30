@@ -79,11 +79,11 @@
     background-attachment: fixed;
     .caja_2{
         padding-top: 50px;
-        @include dimensiones($X:400px,$Y:500px);
+        @include dimensiones($X:300px,$Y:400px);
         margin: auto;
         .caja_2-1{
             @extend %bloquesflex;
-            @include dimensiones($X:400px,$Y:400px);
+            @include dimensiones($X:300px,$Y:300px);
             background-color: rgba(0, 0, 0, 0.7);
             color: white;
         }
